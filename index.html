@@ -626,7 +626,8 @@ pre.code{
 
 .card.a{
   grid-column:span 6;
-  flex-direction:row
+  flex-direction:row;
+  align-items:stretch
 }
 
 .card.b{
@@ -639,7 +640,8 @@ pre.code{
 
 .card.d{
   grid-column:span 4;
-  flex-direction:row
+  flex-direction:row;
+  align-items:stretch
 }
 
 .card.e{
@@ -650,10 +652,25 @@ pre.code{
   background:var(--pb);
   position:relative;
   min-height:220px;
+  min-width:0;
   overflow:hidden;
   display:grid;
   place-items:center;
-  flex:1.2
+  flex:1.2 1 0
+}
+
+.card .vis img{
+  display:block;
+  width:100%;
+  height:100%;
+  min-width:0;
+  min-height:0;
+  object-fit:cover
+}
+
+.card.a .vis,
+.card.d .vis{
+  align-self:stretch
 }
 
 .vis>*{
@@ -2226,50 +2243,50 @@ const P = [
 
 const IMG = {
 
-  profile:"img/zafira.jpg",
+  profile:"./img/zafira.jpg",
 
   "Medix":{
-    cover:"img/medix-1.png",
+    cover:"./img/medix-1.png",
     gallery:[
-      "img/medix-1.png",
-      "img/medix-2.png",
-      "img/medix-3.png"
+      "./img/medix-1.png",
+      "./img/medix-2.png",
+      "./img/medix-3.png"
     ]
   },
 
   "Eulora":{
-    cover:"img/eulora-1.png",
+    cover:"./img/eulora-1.png",
     gallery:[
-      "img/eulora-1.png",
-      "img/eulora-2.png",
-      "img/eulora-3.png"
+      "./img/eulora-1.png",
+      "./img/eulora-2.png",
+      "./img/eulora-3.png"
     ]
   },
 
   "UMKM Hub":{
-    cover:"img/umkm-1.png",
+    cover:"./img/umkm-1.png",
     gallery:[
-      "img/umkm-1.png",
-      "img/umkm-2.png",
-      "img/umkm-3.png"
+      "./img/umkm-1.png",
+      "./img/umkm-2.png",
+      "./img/umkm-3.png"
     ]
   },
 
   "RodaGo":{
-    cover:"img/rodago-1.png",
+    cover:"./img/rodago-1.png",
     gallery:[
-      "img/rodago-1.png",
-      "img/rodago-2.png",
-      "img/rodago-3.png"
+      "./img/rodago-1.png",
+      "./img/rodago-2.png",
+      "./img/rodago-3.png"
     ]
   },
 
   "The Moments":{
-    cover:"img/moments-1.png",
+    cover:"./img/moments-1.png",
     gallery:[
-      "img/moments-1.png",
-      "img/moments-2.png",
-      "img/moments-3.png"
+      "./img/moments-1.png",
+      "./img/moments-2.png",
+      "./img/moments-3.png"
     ]
   }
 
@@ -2293,7 +2310,7 @@ P.forEach(p => {
         style="
           width:100%;
           height:100%;
-          object-fit:contain;
+          object-fit:cover;
           display:block;
         "
       >
