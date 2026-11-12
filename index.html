@@ -1226,25 +1226,12 @@ footer .t{color:var(--acc);margin:6px 0}
 const $ = s => document.querySelector(s);
 
 const MID = {
-  pdf:"./application-letter.pdf",
-  video:""
+  pdf: "./application-letter.pdf",
+  video: "https://drive.google.com/file/d/ID_VIDEO_KAMU/view?usp=sharing"
 };
 
-[
-  ["#btnPdf", MID.pdf,   "Open PDF ↗"],
-  ["#btnVid", MID.video, "Watch Video ↗"]
-].forEach(([sel,url,label]) => {
-
-  const b = $(sel);
-
-  if(url){
-    b.href = url;
-    b.textContent = label;
-  }else{
-    b.removeAttribute('href');
-    b.classList.add('off');
-    b.textContent = "Coming soon";
-  }
+$('#btnPdf').href = MID.pdf;
+$('#btnVid').href = MID.video;
 
 });
 
