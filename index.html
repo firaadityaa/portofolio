@@ -23,15 +23,9 @@
   --r:20px
 }
 
-*{
-  box-sizing:border-box;
-  margin:0
-}
+*{box-sizing:border-box;margin:0}
 
-html{
-  scroll-behavior:smooth;
-  scroll-padding-top:90px
-}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
 
 body{
   font:400 16px/1.65 'Plus Jakarta Sans',system-ui,sans-serif;
@@ -51,39 +45,17 @@ h1,h2,h3,.disp{
   letter-spacing:-.02em
 }
 
-a{
-  color:inherit;
-  text-decoration:none
-}
+a{color:inherit;text-decoration:none}
 
-button{
-  font:inherit;
-  cursor:pointer;
-  border:0;
-  background:none;
-  color:inherit
-}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 
-:focus-visible{
-  outline:3px solid var(--main);
-  outline-offset:3px
-}
+:focus-visible{outline:3px solid var(--main);outline-offset:3px}
 
-.wrap{
-  max-width:1120px;
-  margin:auto;
-  padding:0 24px
-}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
 
-section{
-  padding:96px 0;
-  position:relative
-}
+section{padding:96px 0;position:relative}
 
-.bg-s{
-  background:var(--bg);
-  background-image:none
-}
+.bg-s{background:var(--bg);background-image:none}
 
 h2{
   font-size:clamp(2rem,4.5vw,3.2rem);
@@ -106,16 +78,9 @@ h2::after{
   transition:transform .8s .2s
 }
 
-.in h2::after,
-h2.in::after{
-  transform:scaleX(1)
-}
+.in h2::after,h2.in::after{transform:scaleX(1)}
 
-.sub{
-  color:var(--mute);
-  max-width:560px;
-  margin:14px 0 40px
-}
+.sub{color:var(--mute);max-width:560px;margin:14px 0 40px}
 
 .btn{
   display:inline-flex;
@@ -128,24 +93,11 @@ h2.in::after{
   will-change:transform
 }
 
-.btn.p{
-  background:var(--main);
-  color:#fff;
-  box-shadow:0 4px 0 var(--main-d)
-}
-
-.btn.p:hover{
-  box-shadow:0 6px 0 var(--main-d)
-}
-
-.btn.s{
-  background:#fff;
-  border:2px solid var(--ink)
-}
-
-.btn.s:hover{
-  background:var(--acc)
-}
+.btn.p{background:var(--main);color:#fff;box-shadow:0 4px 0 var(--main-d)}
+.btn.p:hover{box-shadow:0 6px 0 var(--main-d)}
+.btn.s{background:#fff;border:2px solid var(--ink)}
+.btn.s:hover{background:var(--acc)}
+.btn.off{opacity:.45;pointer-events:none;box-shadow:none}
 
 .chip{
   display:inline-block;
@@ -158,15 +110,7 @@ h2.in::after{
 }
 
 /* NAV */
-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:50;
-  padding:18px 0;
-  transition:.35s
-}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;transition:.35s}
 
 nav .wrap{
   display:flex;
@@ -176,12 +120,10 @@ nav .wrap{
   transition:.35s
 }
 
-nav.sc{
-  padding:10px 0
-}
+nav.sc{padding:10px 0}
 
 nav.sc .wrap{
-  max-width:900px;
+  max-width:960px;
   background:rgba(255,255,255,.92);
   border:1.5px solid var(--ink);
   border-radius:99px;
@@ -189,20 +131,10 @@ nav.sc .wrap{
   box-shadow:0 4px 0 var(--ink)
 }
 
-.logo{
-  font:800 1.3rem 'Bricolage Grotesque'
-}
+.logo{font:800 1.3rem 'Bricolage Grotesque'}
+.logo span{color:var(--main)}
 
-.logo span{
-  color:var(--main)
-}
-
-.links{
-  display:flex;
-  gap:6px;
-  list-style:none;
-  padding:0
-}
+.links{display:flex;gap:6px;list-style:none;padding:0}
 
 .links a{
   padding:6px 12px;
@@ -212,16 +144,9 @@ nav.sc .wrap{
   transition:.2s
 }
 
-.links a:hover,
-.links a.on{
-  background:var(--ink);
-  color:#fff
-}
+.links a:hover,.links a.on{background:var(--ink);color:#fff}
 
-.nav-cta{
-  padding:10px 20px;
-  font-size:.9rem
-}
+.nav-cta{padding:10px 20px;font-size:.9rem}
 
 .burger{
   display:none;
@@ -234,12 +159,7 @@ nav.sc .wrap{
 }
 
 /* HERO */
-#home{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  padding-top:120px
-}
+#home{min-height:100vh;display:flex;align-items:center;padding-top:120px}
 
 .hero{
   display:grid;
@@ -270,22 +190,11 @@ nav.sc .wrap{
   animation:pulse 2s infinite
 }
 
-@keyframes pulse{
-  70%{
-    box-shadow:0 0 0 9px #0000
-  }
-}
+@keyframes pulse{70%{box-shadow:0 0 0 9px #0000}}
 
-h1{
-  font-size:clamp(2.8rem,7vw,5.4rem);
-  font-weight:800
-}
+h1{font-size:clamp(2.8rem,7vw,5.4rem);font-weight:800}
 
-h1 .w{
-  display:inline-block;
-  overflow:hidden;
-  vertical-align:top
-}
+h1 .w{display:inline-block;overflow:hidden;vertical-align:top}
 
 h1 .w i{
   display:inline-block;
@@ -294,45 +203,19 @@ h1 .w i{
   animation:up .9s cubic-bezier(.2,.8,.2,1) forwards
 }
 
-@keyframes up{
-  to{
-    transform:none
-  }
-}
+@keyframes up{to{transform:none}}
 
-.role{
-  font:600 1.1rem 'Bricolage Grotesque';
-  color:var(--main);
-  margin:18px 0 14px
-}
+.role{font:600 1.1rem 'Bricolage Grotesque';color:var(--main);margin:18px 0 14px}
 
-.hero p.d{
-  color:var(--mute);
-  max-width:520px;
-  margin-bottom:28px
-}
+.hero p.d{color:var(--mute);max-width:520px;margin-bottom:28px}
 
-.hero .fade{
-  opacity:0;
-  animation:fade .8s .7s forwards
-}
+.hero .fade{opacity:0;animation:fade .8s .7s forwards}
 
-@keyframes fade{
-  to{
-    opacity:1
-  }
-}
+@keyframes fade{to{opacity:1}}
 
-.cta-row{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap
-}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
 
-.stage{
-  position:relative;
-  height:440px
-}
+.stage{position:relative;height:440px}
 
 .laptop{
   position:absolute;
@@ -353,20 +236,9 @@ h1 .w i{
   align-items:center
 }
 
-.bar b{
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#ff6b6b
-}
-
-.bar b:nth-child(2){
-  background:var(--acc)
-}
-
-.bar b:nth-child(3){
-  background:#4ade80
-}
+.bar b{width:10px;height:10px;border-radius:50%;background:#ff6b6b}
+.bar b:nth-child(2){background:var(--acc)}
+.bar b:nth-child(3){background:#4ade80}
 
 .bar u{
   margin-left:10px;
@@ -378,9 +250,7 @@ h1 .w i{
   padding:1px 12px
 }
 
-.scr{
-  padding:18px
-}
+.scr{padding:18px}
 
 .scr .av{
   width:90px;
@@ -394,40 +264,14 @@ h1 .w i{
   overflow:hidden
 }
 
-.scr .av img{
-  width:100%;
-  height:100%;
-  object-fit:cover
-}
+.scr .av img{width:100%;height:100%;object-fit:cover}
 
-.scr .l{
-  height:10px;
-  border-radius:6px;
-  background:#e6e6f5;
-  margin:10px 0
-}
+.scr .l{height:10px;border-radius:6px;background:#e6e6f5;margin:10px 0}
+.scr .l.m{background:var(--main);width:60%}
 
-.scr .l.m{
-  background:var(--main);
-  width:60%
-}
-
-.mini{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:8px;
-  margin-top:14px
-}
-
-.mini div{
-  height:64px;
-  border-radius:10px;
-  background:#ecebff
-}
-
-.mini div:nth-child(2){
-  background:var(--acc)
-}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.mini div{height:64px;border-radius:10px;background:#ecebff}
+.mini div:nth-child(2){background:var(--acc)}
 
 pre.code{
   position:absolute;
@@ -453,45 +297,17 @@ pre.code{
   animation:flo 6s ease-in-out infinite
 }
 
-@keyframes flo{
-  50%{
-    transform:translateY(-10px) rotate(var(--rot,0deg))
-  }
-}
+@keyframes flo{50%{transform:translateY(-10px) rotate(var(--rot,0deg))}}
 
-.spark{
-  position:absolute;
-  color:var(--acc);
-  font-size:1.6rem;
-  animation:tw 3s infinite
-}
+.spark{position:absolute;color:var(--acc);font-size:1.6rem;animation:tw 3s infinite}
 
-@keyframes tw{
-  50%{
-    transform:scale(.6) rotate(40deg);
-    opacity:.5
-  }
-}
+@keyframes tw{50%{transform:scale(.6) rotate(40deg);opacity:.5}}
 
 /* ABOUT */
-.about{
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:56px;
-  align-items:start
-}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+.about p{margin-bottom:16px;color:#34344d}
 
-.about p{
-  margin-bottom:16px;
-  color:#34344d
-}
-
-.notes{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-  padding-top:10px
-}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:10px}
 
 .note{
   padding:20px 18px;
@@ -503,27 +319,12 @@ pre.code{
   transition:transform .25s
 }
 
-.note:hover{
-  transform:rotate(0) translateY(-6px)
-}
-
-.note small{
-  font-weight:600;
-  color:#55507a
-}
-
-.note b{
-  display:block;
-  font:700 1.05rem 'Bricolage Grotesque';
-  line-height:1.25
-}
+.note:hover{transform:rotate(0) translateY(-6px)}
+.note small{font-weight:600;color:#55507a}
+.note b{display:block;font:700 1.05rem 'Bricolage Grotesque';line-height:1.25}
 
 /* SKILLS */
-.sk{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:24px
-}
+.sk{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 
 .win{
   background:#fff;
@@ -533,42 +334,13 @@ pre.code{
   overflow:hidden
 }
 
-.win .bar{
-  border-radius:0
-}
-
-.win .body{
-  padding:20px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px
-}
-
-.win.term{
-  background:var(--ink);
-  color:#e9e7ff
-}
-
-.term .bar{
-  background:#26264a;
-  border-color:#000
-}
-
-.term .bar u{
-  background:#16162B;
-  color:#aaa
-}
-
-.term .tg{
-  background:#26264a;
-  color:#d9d4ff;
-  border-color:#3d3d70
-}
-
-.term .tg:hover{
-  background:var(--acc);
-  color:var(--ink)
-}
+.win .bar{border-radius:0}
+.win .body{padding:20px;display:flex;flex-wrap:wrap;gap:10px}
+.win.term{background:var(--ink);color:#e9e7ff}
+.term .bar{background:#26264a;border-color:#000}
+.term .bar u{background:#16162B;color:#aaa}
+.term .tg{background:#26264a;color:#d9d4ff;border-color:#3d3d70}
+.term .tg:hover{background:var(--acc);color:var(--ink)}
 
 .canvas .body{
   background-image:radial-gradient(var(--line) 1.5px,transparent 1.5px);
@@ -585,25 +357,12 @@ pre.code{
   cursor:default
 }
 
-.tg:hover{
-  background:var(--acc);
-  transform:translateY(-4px) rotate(-3deg)
-}
-
-.canvas .tg:nth-child(odd){
-  border-radius:8px
-}
-
-.sk .win:nth-child(n+3) .tg{
-  background:#fafaff
-}
+.tg:hover{background:var(--acc);transform:translateY(-4px) rotate(-3deg)}
+.canvas .tg:nth-child(odd){border-radius:8px}
+.sk .win:nth-child(n+3) .tg{background:#fafaff}
 
 /* PROJECTS */
-.pj{
-  display:grid;
-  grid-template-columns:repeat(6,1fr);
-  gap:24px
-}
+.pj{display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
 
 .card{
   background:#fff;
@@ -618,35 +377,13 @@ pre.code{
   position:relative
 }
 
-.card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 10px 0 var(--pc);
-  border-color:var(--pc)
-}
+.card:hover{transform:translateY(-8px);box-shadow:0 10px 0 var(--pc);border-color:var(--pc)}
 
-.card.a{
-  grid-column:span 6;
-  flex-direction:row;
-  align-items:stretch
-}
-
-.card.b{
-  grid-column:span 3
-}
-
-.card.c{
-  grid-column:span 3
-}
-
-.card.d{
-  grid-column:span 4;
-  flex-direction:row;
-  align-items:stretch
-}
-
-.card.e{
-  grid-column:span 2
-}
+.card.a{grid-column:span 6;flex-direction:row;align-items:stretch}
+.card.b{grid-column:span 3}
+.card.c{grid-column:span 3}
+.card.d{grid-column:span 4;flex-direction:row;align-items:stretch}
+.card.e{grid-column:span 2}
 
 .vis{
   background:var(--pb);
@@ -668,41 +405,15 @@ pre.code{
   object-fit:cover
 }
 
-.card.a .vis,
-.card.d .vis{
-  align-self:stretch
-}
+.card.a .vis,.card.d .vis{align-self:stretch}
 
-.vis>*{
-  transition:transform .5s
-}
+.vis>*{transition:transform .5s}
+.card:hover .vis>*{transform:scale(1.06)}
 
-.card:hover .vis>*{
-  transform:scale(1.06)
-}
-
-.card .info{
-  padding:24px;
-  flex:1;
-  display:flex;
-  flex-direction:column;
-  gap:8px
-}
-
-.card h3{
-  font-size:1.7rem
-}
-
-.card .t{
-  color:var(--pc);
-  font-weight:700;
-  font-size:.9rem
-}
-
-.card .ds{
-  color:var(--mute);
-  font-size:.95rem
-}
+.card .info{padding:24px;flex:1;display:flex;flex-direction:column;gap:8px}
+.card h3{font-size:1.7rem}
+.card .t{color:var(--pc);font-weight:700;font-size:.9rem}
+.card .ds{color:var(--mute);font-size:.95rem}
 
 .card .tags{
   display:flex;
@@ -715,11 +426,7 @@ pre.code{
   transition:.35s
 }
 
-.card:hover .tags,
-.card:focus-visible .tags{
-  opacity:1;
-  transform:none
-}
+.card:hover .tags,.card:focus-visible .tags{opacity:1;transform:none}
 
 .card .ar{
   position:absolute;
@@ -736,10 +443,7 @@ pre.code{
   z-index:2
 }
 
-.card:hover .ar{
-  transform:translate(4px,-4px) rotate(45deg);
-  background:var(--pc)
-}
+.card:hover .ar{transform:translate(4px,-4px) rotate(45deg);background:var(--pc)}
 
 .mock{
   width:78%;
@@ -750,35 +454,11 @@ pre.code{
   overflow:hidden
 }
 
-.mock .bar{
-  padding:7px 10px
-}
-
-.mock .in{
-  padding:12px;
-  display:grid;
-  gap:7px
-}
-
-.mock .in i{
-  display:block;
-  height:9px;
-  border-radius:5px;
-  background:var(--pb)
-}
-
-.mock .in .g{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:6px
-}
-
-.mock .in .g i{
-  height:42px;
-  border-radius:8px;
-  background:var(--pc);
-  opacity:.85
-}
+.mock .bar{padding:7px 10px}
+.mock .in{padding:12px;display:grid;gap:7px}
+.mock .in i{display:block;height:9px;border-radius:5px;background:var(--pb)}
+.mock .in .g{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.mock .in .g i{height:42px;border-radius:8px;background:var(--pc);opacity:.85}
 
 .phone{
   width:112px;
@@ -794,17 +474,8 @@ pre.code{
   margin:20px 0
 }
 
-.phone i{
-  display:block;
-  height:36px;
-  border-radius:9px;
-  background:var(--pb)
-}
-
-.phone i:first-child{
-  background:var(--pc);
-  height:56px
-}
+.phone i{display:block;height:36px;border-radius:9px;background:var(--pb)}
+.phone i:first-child{background:var(--pc);height:56px}
 
 .badge{
   position:absolute;
@@ -831,10 +502,7 @@ pre.code{
   overflow-y:auto
 }
 
-.modal.o{
-  display:grid;
-  animation:fade .3s forwards
-}
+.modal.o{display:grid;animation:fade .3s forwards}
 
 .sheet{
   background:#fff;
@@ -848,12 +516,7 @@ pre.code{
   animation:pop .4s cubic-bezier(.2,.8,.2,1)
 }
 
-@keyframes pop{
-  from{
-    transform:translateY(30px);
-    opacity:0
-  }
-}
+@keyframes pop{from{transform:translateY(30px);opacity:0}}
 
 .sheet .hd{
   padding:30px 32px 20px;
@@ -862,9 +525,7 @@ pre.code{
   position:relative
 }
 
-.sheet .hd h3{
-  font-size:2.4rem
-}
+.sheet .hd h3{font-size:2.4rem}
 
 .x{
   position:absolute;
@@ -878,41 +539,14 @@ pre.code{
   font-size:1.1rem
 }
 
-.sheet .bd{
-  padding:28px 32px 34px;
-  display:grid;
-  gap:22px
-}
+.sheet .bd{padding:28px 32px 34px;display:grid;gap:22px}
+.sheet h4{font:700 .95rem 'Bricolage Grotesque';color:var(--main);margin-bottom:4px}
 
-.sheet h4{
-  font:700 .95rem 'Bricolage Grotesque';
-  color:var(--main);
-  margin-bottom:4px
-}
+.meta{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.meta div{background:var(--bg);border-radius:12px;padding:10px 14px;font-size:.9rem}
+.meta small{display:block;color:var(--mute)}
 
-.meta{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px
-}
-
-.meta div{
-  background:var(--bg);
-  border-radius:12px;
-  padding:10px 14px;
-  font-size:.9rem
-}
-
-.meta small{
-  display:block;
-  color:var(--mute)
-}
-
-.gal{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px
-}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 
 .gal i{
   aspect-ratio:4/3;
@@ -927,22 +561,11 @@ pre.code{
   color:var(--mute)
 }
 
-.gal img{
-  width:100%;
-  height:100%;
-  object-fit:cover
-}
-
-.sheet ul{
-  padding-left:20px
-}
+.gal img{width:100%;height:100%;object-fit:cover}
+.sheet ul{padding-left:20px}
 
 /* EXPERIENCE */
-.tl{
-  position:relative;
-  display:grid;
-  gap:34px
-}
+.tl{position:relative;display:grid;gap:34px}
 
 .tl::before{
   content:"";
@@ -955,12 +578,7 @@ pre.code{
   border-radius:3px
 }
 
-.ev{
-  display:grid;
-  grid-template-columns:130px 1fr;
-  gap:42px;
-  position:relative
-}
+.ev{display:grid;grid-template-columns:130px 1fr;gap:42px;position:relative}
 
 .ev::before{
   content:"";
@@ -976,23 +594,10 @@ pre.code{
   z-index:2
 }
 
-.ev:hover::before{
-  background:var(--main);
-  transform:scale(1.2)
-}
+.ev:hover::before{background:var(--main);transform:scale(1.2)}
 
-.yr{
-  font:800 2.6rem 'Bricolage Grotesque';
-  color:var(--main);
-  line-height:1
-}
-
-.yr small{
-  display:block;
-  font:600 .85rem 'Plus Jakarta Sans';
-  color:var(--mute);
-  margin-top:5px
-}
+.yr{font:800 2.6rem 'Bricolage Grotesque';color:var(--main);line-height:1}
+.yr small{display:block;font:600 .85rem 'Plus Jakarta Sans';color:var(--mute);margin-top:5px}
 
 .ec{
   background:#fff;
@@ -1003,44 +608,56 @@ pre.code{
   transition:transform .25s,box-shadow .25s
 }
 
-.ec:hover{
-  transform:translateX(6px);
-  box-shadow:-6px 6px 0 var(--acc)
-}
+.ec:hover{transform:translateX(6px);box-shadow:-6px 6px 0 var(--acc)}
+.ec h3{font-size:1.35rem}
+.ec .rl{color:var(--mute);font-weight:600;font-size:.9rem;margin-bottom:8px}
+.ec ul{padding-left:18px;color:#34344d;font-size:.95rem}
+.ec .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.ec .sub2{border-top:2px dashed var(--line);margin-top:14px;padding-top:14px}
+.ec .sub2 b{font-family:'Bricolage Grotesque'}
 
-.ec h3{
-  font-size:1.35rem
-}
+/* MIDTERM */
+.mt{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 
-.ec .rl{
-  color:var(--mute);
-  font-weight:600;
-  font-size:.9rem;
-  margin-bottom:8px
-}
-
-.ec ul{
-  padding-left:18px;
-  color:#34344d;
-  font-size:.95rem
-}
-
-.ec .tags{
+.paper{
+  background:#fff;
+  border:2px solid var(--ink);
+  border-radius:var(--r);
+  box-shadow:8px 8px 0 var(--ink);
+  overflow:hidden;
   display:flex;
-  gap:6px;
-  flex-wrap:wrap;
-  margin-top:12px
+  flex-direction:column;
+  transition:transform .25s,box-shadow .25s
 }
 
-.ec .sub2{
-  border-top:2px dashed var(--line);
-  margin-top:14px;
-  padding-top:14px
+.paper:hover{transform:translateY(-6px);box-shadow:8px 14px 0 var(--acc)}
+
+.paper .hd2{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  padding:14px 22px;
+  background:var(--main);
+  color:#fff;
+  font-weight:700
 }
 
-.ec .sub2 b{
-  font-family:'Bricolage Grotesque'
+.paper.v .hd2{background:var(--ink)}
+
+.paper .pb{
+  padding:30px 28px 32px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  flex:1
 }
+
+.paper .em{font-size:2.6rem;line-height:1}
+.paper h3{font-size:1.6rem}
+.paper p{color:#34344d;font-size:.95rem}
+.paper .btn{margin-top:auto}
 
 /* EDUCATION */
 .id{
@@ -1054,9 +671,7 @@ pre.code{
   transition:transform .3s
 }
 
-.id:hover{
-  transform:rotate(0)
-}
+.id:hover{transform:rotate(0)}
 
 .id .top{
   background:var(--main);
@@ -1067,12 +682,7 @@ pre.code{
   justify-content:space-between
 }
 
-.id .mid{
-  padding:24px;
-  display:flex;
-  gap:20px;
-  align-items:center
-}
+.id .mid{padding:24px;display:flex;gap:20px;align-items:center}
 
 .id .ph{
   width:84px;
@@ -1086,27 +696,12 @@ pre.code{
   overflow:hidden
 }
 
-.id .ph img{
-  width:100%;
-  height:100%;
-  object-fit:cover
-}
-
-.id h3{
-  font-size:1.5rem
-}
-
-.id p{
-  color:var(--mute)
-}
+.id .ph img{width:100%;height:100%;object-fit:cover}
+.id h3{font-size:1.5rem}
+.id p{color:var(--mute)}
 
 /* CERTIFICATES */
-.fil{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-bottom:24px
-}
+.fil{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
 
 .fil button{
   padding:8px 18px;
@@ -1116,50 +711,18 @@ pre.code{
   background:#fff
 }
 
-.fil button.on{
-  background:var(--ink);
-  color:#fff
-}
+.fil button.on{background:var(--ink);color:#fff}
 
-.cg{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-  gap:18px
-}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
 
-.cert{
-  background:#fff;
-  border:2px solid var(--ink);
-  border-radius:var(--r);
-  padding:20px
-}
-
-.cert h3{
-  font-size:1.15rem;
-  margin:8px 0 4px
-}
-
-.cert p{
-  color:var(--mute);
-  font-size:.9rem
-}
+.cert{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:20px}
+.cert h3{font-size:1.15rem;margin:8px 0 4px}
+.cert p{color:var(--mute);font-size:.9rem}
 
 /* NOW */
-.nw{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px
-}
-
-.nw .note{
-  padding:26px 20px;
-  font-size:.95rem
-}
-
-.nw .e{
-  font-size:1.8rem;
-  display:block
-}
+.nw{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.nw .note{padding:26px 20px;font-size:.95rem}
+.nw .e{font-size:1.8rem;display:block}
 
 /* CONTACT */
 .mail{
@@ -1172,45 +735,14 @@ pre.code{
   margin:auto
 }
 
-.mail .bar{
-  padding:14px 18px
-}
-
-.mail .bar span{
-  font-weight:600;
-  font-size:.85rem;
-  margin-left:8px
-}
-
-.mail .bd{
-  padding:44px 40px;
-  text-align:center
-}
-
-.mail h2{
-  font-size:clamp(2.2rem,5.5vw,4rem);
-  display:block
-}
-
-.mail h2::after{
-  display:none
-}
-
-.mail p{
-  color:var(--mute);
-  max-width:520px;
-  margin:16px auto 28px
-}
-
-.mail .cta-row{
-  justify-content:center
-}
-
-.env{
-  font-size:2.6rem;
-  display:block;
-  margin-bottom:8px
-}
+.mail .bar{padding:14px 18px}
+.mail .bar span{font-weight:600;font-size:.85rem;margin-left:8px}
+.mail .bd{padding:44px 40px;text-align:center}
+.mail h2{font-size:clamp(2.2rem,5.5vw,4rem);display:block}
+.mail h2::after{display:none}
+.mail p{color:var(--mute);max-width:520px;margin:16px auto 28px}
+.mail .cta-row{justify-content:center}
+.env{font-size:2.6rem;display:block;margin-bottom:8px}
 
 footer{
   padding:44px 0;
@@ -1220,16 +752,8 @@ footer{
   font-size:.9rem
 }
 
-footer b{
-  display:block;
-  font:700 1.3rem 'Bricolage Grotesque';
-  color:#fff
-}
-
-footer .t{
-  color:var(--acc);
-  margin:6px 0
-}
+footer b{display:block;font:700 1.3rem 'Bricolage Grotesque';color:#fff}
+footer .t{color:var(--acc);margin:6px 0}
 
 /* CURSOR */
 .cur{
@@ -1247,18 +771,9 @@ footer .t{
   opacity:0
 }
 
-.cur.h{
-  width:56px;
-  height:56px;
-  margin:-28px 0 0 -28px;
-  background:#ffc93c55
-}
+.cur.h{width:56px;height:56px;margin:-28px 0 0 -28px;background:#ffc93c55}
 
-@media(hover:none){
-  .cur{
-    display:none
-  }
-}
+@media(hover:none){.cur{display:none}}
 
 /* ANIMATION */
 .rv{
@@ -1268,36 +783,14 @@ footer .t{
   transition-delay:var(--d,0s)
 }
 
-.rv.in{
-  opacity:1;
-  transform:none
-}
+.rv.in{opacity:1;transform:none}
 
 /* RESPONSIVE */
 @media(max-width:900px){
-
-  .hero,
-  .about,
-  .sk{
-    grid-template-columns:1fr
-  }
-
-  .stage{
-    height:380px
-  }
-
-  .card.a,
-  .card.b,
-  .card.c,
-  .card.d,
-  .card.e{
-    grid-column:span 6;
-    flex-direction:column
-  }
-
-  .nw{
-    grid-template-columns:1fr 1fr
-  }
+  .hero,.about,.sk,.mt{grid-template-columns:1fr}
+  .stage{height:380px}
+  .card.a,.card.b,.card.c,.card.d,.card.e{grid-column:span 6;flex-direction:column}
+  .nw{grid-template-columns:1fr 1fr}
 
   .links{
     position:fixed;
@@ -1311,98 +804,31 @@ footer .t{
     box-shadow:6px 6px 0 var(--ink)
   }
 
-  .links.o{
-    display:flex
-  }
-
-  .burger{
-    display:block
-  }
-
-  .nav-cta{
-    display:none
-  }
-
-  nav.sc .wrap{
-    padding:6px 8px 6px 18px
-  }
+  .links.o{display:flex}
+  .burger{display:block}
+  .nav-cta{display:none}
+  nav.sc .wrap{padding:6px 8px 6px 18px}
 }
 
 @media(max-width:640px){
-
-  section{
-    padding:68px 0
-  }
-
-  .tl::before{
-    left:7px
-  }
-
-  .ev{
-    grid-template-columns:1fr;
-    gap:6px;
-    padding-left:34px
-  }
-
-  .ev::before{
-    left:0
-  }
-
-  .ec{
-    margin-left:0
-  }
-
-  .yr{
-    font-size:2rem
-  }
-
-  .nw,
-  .notes{
-    grid-template-columns:1fr 1fr
-  }
-
-  .meta{
-    grid-template-columns:1fr
-  }
-
-  .spark,
-  pre.code{
-    display:none
-  }
-
-  .stage{
-    height:340px
-  }
-
-  .sheet .hd,
-  .sheet .bd{
-    padding-left:20px;
-    padding-right:20px
-  }
-
-  .gal{
-    grid-template-columns:1fr 1fr
-  }
-
-  .mail .bd{
-    padding:32px 20px
-  }
+  section{padding:68px 0}
+  .tl::before{left:7px}
+  .ev{grid-template-columns:1fr;gap:6px;padding-left:34px}
+  .ev::before{left:0}
+  .ec{margin-left:0}
+  .yr{font-size:2rem}
+  .nw,.notes{grid-template-columns:1fr 1fr}
+  .meta{grid-template-columns:1fr}
+  .spark,pre.code{display:none}
+  .stage{height:340px}
+  .sheet .hd,.sheet .bd{padding-left:20px;padding-right:20px}
+  .gal{grid-template-columns:1fr 1fr}
+  .mail .bd{padding:32px 20px}
 }
 
 @media(prefers-reduced-motion:reduce){
-
-  *{
-    animation:none!important;
-    transition:none!important;
-    scroll-behavior:auto
-  }
-
-  .rv,
-  h1 .w i,
-  .hero .fade{
-    opacity:1;
-    transform:none
-  }
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+  .rv,h1 .w i,.hero .fade{opacity:1;transform:none}
 }
 </style>
 </head>
@@ -1415,9 +841,7 @@ footer .t{
 <nav id="nav">
   <div class="wrap">
 
-    <a href="#home" class="logo">
-      zafira<span>.</span>
-    </a>
+    <a href="#home" class="logo">zafira<span>.</span></a>
 
     <ul class="links" id="links">
       <li><a href="#home">Home</a></li>
@@ -1425,17 +849,14 @@ footer .t{
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#midterm">Midterm</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <a href="#contact" class="btn p nav-cta mag">
-      Let's Work Together
-    </a>
+    <a href="#contact" class="btn p nav-cta mag">Let's Work Together</a>
 
-    <button class="burger" id="bg" aria-label="Menu">
-      ☰
-    </button>
+    <button class="burger" id="bg" aria-label="Menu">☰</button>
 
   </div>
 </nav>
@@ -1469,13 +890,8 @@ footer .t{
       </p>
 
       <div class="cta-row fade">
-        <a href="#projects" class="btn p mag">
-          View My Projects
-        </a>
-
-        <a href="#contact" class="btn s mag">
-          Let's Connect
-        </a>
+        <a href="#projects" class="btn p mag">View My Projects</a>
+        <a href="#contact" class="btn s mag">Let's Connect</a>
       </div>
 
     </div>
@@ -1495,9 +911,7 @@ footer .t{
 
         <div class="scr">
 
-          <div class="av">
-            Z
-          </div>
+          <div class="av">Z</div>
 
           <div class="l m"></div>
           <div class="l"></div>
@@ -1518,25 +932,11 @@ footer .t{
   loves: ["UI", "Web"]
 };</pre>
 
-      <span class="fl" style="top:6px;left:20px;--rot:-4deg">
-        Figma
-      </span>
-
-      <span class="fl" style="top:70px;right:-4px;animation-delay:.8s;--rot:4deg">
-        HTML
-      </span>
-
-      <span class="fl" style="bottom:90px;right:0;animation-delay:1.6s">
-        CSS
-      </span>
-
-      <span class="fl" style="bottom:0;left:40%;animation-delay:2.4s;--rot:3deg">
-        PHP
-      </span>
-
-      <span class="fl" style="top:44%;left:-14px;animation-delay:3.2s;--rot:-3deg">
-        Java
-      </span>
+      <span class="fl" style="top:6px;left:20px;--rot:-4deg">Figma</span>
+      <span class="fl" style="top:70px;right:-4px;animation-delay:.8s;--rot:4deg">HTML</span>
+      <span class="fl" style="bottom:90px;right:0;animation-delay:1.6s">CSS</span>
+      <span class="fl" style="bottom:0;left:40%;animation-delay:2.4s;--rot:3deg">PHP</span>
+      <span class="fl" style="top:44%;left:-14px;animation-delay:3.2s;--rot:-3deg">Java</span>
 
     </div>
 
@@ -1582,9 +982,7 @@ footer .t{
 
   <div class="wrap">
 
-    <h2 class="rv">
-      Things I can work with
-    </h2>
+    <h2 class="rv">Things I can work with</h2>
 
     <p class="sub rv">
       A mix of development, design, productivity, and people skills.
@@ -1602,9 +1000,7 @@ footer .t{
 
   <div class="wrap">
 
-    <h2 class="rv">
-      Things I've built
-    </h2>
+    <h2 class="rv">Things I've built</h2>
 
     <p class="sub rv">
       A collection of projects I've worked on throughout my studies and collaborative experiences.
@@ -1622,9 +1018,7 @@ footer .t{
 
   <div class="wrap">
 
-    <h2 class="rv">
-      More than just coding
-    </h2>
+    <h2 class="rv">More than just coding</h2>
 
     <p class="sub rv">
       Experiences that helped me grow outside the classroom.
@@ -1637,14 +1031,68 @@ footer .t{
 </section>
 
 
+<!-- MIDTERM -->
+<section id="midterm" class="bg-s">
+
+  <div class="wrap">
+
+    <h2 class="rv">Midterm Assignment</h2>
+
+    <p class="sub rv">
+      My job application letter and a three-minute video about the technical skills I developed during my internship.
+    </p>
+
+    <div class="mt">
+
+      <div class="paper rv">
+
+        <div class="hd2">
+          <span>Part A</span>
+          <span>PDF</span>
+        </div>
+
+        <div class="pb">
+          <span class="em">📄</span>
+          <h3>Job Application Letter</h3>
+          <p>
+            A formal application letter to the Human Resources Manager of TechNova Digital Solutions, describing my background, skills, and internship experience.
+          </p>
+          <a class="btn p mag" id="btnPdf" href="#" target="_blank" rel="noopener">Open PDF ↗</a>
+        </div>
+
+      </div>
+
+      <div class="paper v rv" style="--d:.1s">
+
+        <div class="hd2">
+          <span>Part B</span>
+          <span>3 min · Video</span>
+        </div>
+
+        <div class="pb">
+          <span class="em">🎬</span>
+          <h3>Video Presentation</h3>
+          <p>
+            A three-minute video in English about the specific technical skills I developed during my internship and how they prepare me for the position I applied for.
+          </p>
+          <a class="btn p mag" id="btnVid" href="#" target="_blank" rel="noopener">Watch Video ↗</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <!-- EDUCATION -->
 <section id="education" class="bg-s">
 
   <div class="wrap">
 
-    <h2 class="rv">
-      My learning journey
-    </h2>
+    <h2 class="rv">My learning journey</h2>
 
     <div style="height:36px"></div>
 
@@ -1657,16 +1105,12 @@ footer .t{
 
       <div class="mid">
 
-        <div class="ph">
-          Z
-        </div>
+        <div class="ph">Z</div>
 
         <div>
           <h3>Universitas Ahmad Dahlan</h3>
           <p>Bachelor of Informatics</p>
-          <span class="chip" style="margin-top:8px">
-            2023 — Present
-          </span>
+          <span class="chip" style="margin-top:8px">2023 — Present</span>
         </div>
 
       </div>
@@ -1683,9 +1127,7 @@ footer .t{
 
   <div class="wrap">
 
-    <h2>
-      Things I've learned along the way
-    </h2>
+    <h2>Things I've learned along the way</h2>
 
     <div style="height:24px"></div>
 
@@ -1702,9 +1144,7 @@ footer .t{
 
   <div class="wrap">
 
-    <h2 class="rv">
-      Currently...
-    </h2>
+    <h2 class="rv">Currently...</h2>
 
     <div style="height:30px"></div>
 
@@ -1733,9 +1173,7 @@ footer .t{
 
         <span class="env">✉️</span>
 
-        <h2>
-          Let's build something together.
-        </h2>
+        <h2>Let's build something together.</h2>
 
         <p>
           I'm currently open to internship opportunities and new experiences. If you'd like to connect, collaborate, or simply say hi, feel free to reach out.
@@ -1743,17 +1181,11 @@ footer .t{
 
         <div class="cta-row">
 
-          <a class="btn p mag" href="mailto:EMAIL_KAMU@example.com">
-            Email Me
-          </a>
+          <a class="btn p mag" href="mailto:EMAIL_KAMU@example.com">Email Me</a>
 
-          <a class="btn s mag" href="https://www.linkedin.com/in/zafira-ramadhani-putri-aditya-7b3714285/" target="_blank" rel="noopener">
-            LinkedIn
-          </a>
+          <a class="btn s mag" href="https://www.linkedin.com/in/zafira-ramadhani-putri-aditya-7b3714285/" target="_blank" rel="noopener">LinkedIn</a>
 
-          <a class="btn s mag" href="https://github.com/firaadityaa" target="_blank" rel="noopener">
-            GitHub
-          </a>
+          <a class="btn s mag" href="https://github.com/firaadityaa" target="_blank" rel="noopener">GitHub</a>
 
         </div>
 
@@ -1770,17 +1202,11 @@ footer .t{
 
   <div class="wrap">
 
-    <b>
-      Zafira Ramadhani Putri Aditya
-    </b>
+    <b>Zafira Ramadhani Putri Aditya</b>
 
-    <code>
-      Informatics Student • UI/UX • Web Development
-    </code>
+    <code>Informatics Student • UI/UX • Web Development</code>
 
-    <div class="t">
-      Designed &amp; built with curiosity ✦
-    </div>
+    <div class="t">Designed &amp; built with curiosity ✦</div>
 
     © 2026 Zafira Ramadhani
 
@@ -1798,6 +1224,41 @@ footer .t{
 <script>
 
 const $ = s => document.querySelector(s);
+
+
+/* =========================================================
+   MIDTERM LINKS  (ISI DI SINI)
+   - pdf   : lokasi file PDF surat lamaran
+             contoh: "./docs/application-letter.pdf"
+             atau link Google Drive: "https://drive.google.com/file/d/ID_FILE/view"
+   - video : link video (YouTube / Google Drive / file mp4)
+             contoh: "https://youtu.be/xxxx"
+             atau  : "./video/midterm.mp4"
+   Kalau dikosongkan, tombolnya jadi "Coming soon".
+========================================================= */
+
+const MID = {
+  pdf:"./docs/application-letter.pdf",
+  video:""
+};
+
+[
+  ["#btnPdf", MID.pdf,   "Open PDF ↗"],
+  ["#btnVid", MID.video, "Watch Video ↗"]
+].forEach(([sel,url,label]) => {
+
+  const b = $(sel);
+
+  if(url){
+    b.href = url;
+    b.textContent = label;
+  }else{
+    b.removeAttribute('href');
+    b.classList.add('off');
+    b.textContent = "Coming soon";
+  }
+
+});
 
 
 /* =========================================================
@@ -1833,55 +1294,28 @@ const sk = [
     "Programming & Development",
     "term",
     "~/code",
-    [
-      "HTML",
-      "CSS",
-      "PHP",
-      "Java",
-      "JavaScript",
-      "SQL",
-      "Web Development"
-    ]
+    ["HTML","CSS","PHP","Java","JavaScript","SQL","Web Development"]
   ],
 
   [
     "UI/UX & Design",
     "canvas",
     "figma / design",
-    [
-      "Figma",
-      "Canva",
-      "UI Design",
-      "UX Design",
-      "Wireframing",
-      "Prototyping",
-      "Design Layout"
-    ]
+    ["Figma","Canva","UI Design","UX Design","Wireframing","Prototyping","Design Layout"]
   ],
 
   [
     "Productivity",
     "",
     "docs",
-    [
-      "Microsoft Word",
-      "Microsoft Excel",
-      "Microsoft PowerPoint"
-    ]
+    ["Microsoft Word","Microsoft Excel","Microsoft PowerPoint"]
   ],
 
   [
     "Other Skills",
     "",
     "soft skills",
-    [
-      "Problem Solving",
-      "Teamwork",
-      "Communication",
-      "Project Collaboration",
-      "Documentation",
-      "Presentation"
-    ]
+    ["Problem Solving","Teamwork","Communication","Project Collaboration","Documentation","Presentation"]
   ]
 
 ];
@@ -1906,11 +1340,7 @@ $('#sk').innerHTML = sk.map((s,i) => `
         ${s[0]}
       </h3>
 
-      ${s[3].map(t => `
-        <span class="tg">
-          ${t}
-        </span>
-      `).join('')}
+      ${s[3].map(t => `<span class="tg">${t}</span>`).join('')}
 
     </div>
 
@@ -1977,12 +1407,7 @@ const P = [
     r:"UI/UX & Web Development",
     f:"Hospital Management",
 
-    tags:[
-      "Healthcare",
-      "Web",
-      "UI/UX",
-      "Management System"
-    ],
+    tags:["Healthcare","Web","UI/UX","Management System"],
 
     pc:"#4B3FE0",
     pb:"#e3e0ff",
@@ -2002,13 +1427,7 @@ const P = [
       "Patient-related information management"
     ],
 
-    ts:[
-      "HTML",
-      "CSS",
-      "PHP",
-      "SQL",
-      "Figma"
-    ]
+    ts:["HTML","CSS","PHP","SQL","Figma"]
   },
 
 
@@ -2024,12 +1443,7 @@ const P = [
     r:"UI/UX & Web Development",
     f:"Online Jewelry Shopping",
 
-    tags:[
-      "E-Commerce",
-      "Jewelry",
-      "Web",
-      "UI/UX"
-    ],
+    tags:["E-Commerce","Jewelry","Web","UI/UX"],
 
     pc:"#9a6b2f",
     pb:"#f3e9d8",
@@ -2080,13 +1494,7 @@ const P = [
       "Elegant visual style"
     ],
 
-    ts:[
-      "HTML",
-      "CSS",
-      "PHP",
-      "SQL",
-      "Figma"
-    ]
+    ts:["HTML","CSS","PHP","SQL","Figma"]
   },
 
 
@@ -2102,12 +1510,7 @@ const P = [
     r:"UI/UX & Web Development",
     f:"UMKM Profile & Digital Services",
 
-    tags:[
-      "UMKM",
-      "Web",
-      "Digital Platform",
-      "Business"
-    ],
+    tags:["UMKM","Web","Digital Platform","Business"],
 
     pc:"#d9480f",
     pb:"#ffe8d6",
@@ -2127,12 +1530,7 @@ const P = [
       "Easy access to business details"
     ],
 
-    ts:[
-      "HTML",
-      "CSS",
-      "PHP",
-      "SQL"
-    ]
+    ts:["HTML","CSS","PHP","SQL"]
   },
 
 
@@ -2148,12 +1546,7 @@ const P = [
     r:"UI/UX & Mobile Development",
     f:"Driver Operations & Trip Management",
 
-    tags:[
-      "Mobile",
-      "Driver",
-      "Transportation",
-      "UI/UX"
-    ],
+    tags:["Mobile","Driver","Transportation","UI/UX"],
 
     pc:"#0b7285",
     pb:"#d3f1f5",
@@ -2173,10 +1566,7 @@ const P = [
       "Mobile-first interface"
     ],
 
-    ts:[
-      "Java",
-      "Figma"
-    ]
+    ts:["Java","Figma"]
   },
 
 
@@ -2193,12 +1583,7 @@ const P = [
     f:"Online Flower Shopping",
     team:"Code Bloom",
 
-    tags:[
-      "E-Commerce",
-      "Flower Shop",
-      "Web",
-      "Team Project"
-    ],
+    tags:["E-Commerce","Flower Shop","Web","Team Project"],
 
     pc:"#c2255c",
     pb:"#ffdeeb",
@@ -2226,12 +1611,7 @@ const P = [
       "Visual storefront"
     ],
 
-    ts:[
-      "HTML",
-      "CSS",
-      "PHP",
-      "SQL"
-    ]
+    ts:["HTML","CSS","PHP","SQL"]
   }
 
 ];
@@ -2247,47 +1627,27 @@ const IMG = {
 
   "Medix":{
     cover:"./img/medix-1.png",
-    gallery:[
-      "./img/medix-1.png",
-      "./img/medix-2.png",
-      "./img/medix-3.png"
-    ]
+    gallery:["./img/medix-1.png","./img/medix-2.png","./img/medix-3.png"]
   },
 
   "Eulora":{
     cover:"./img/eulora-1.png",
-    gallery:[
-      "./img/eulora-1.png",
-      "./img/eulora-2.png",
-      "./img/eulora-3.png"
-    ]
+    gallery:["./img/eulora-1.png","./img/eulora-2.png","./img/eulora-3.png"]
   },
 
   "UMKM Hub":{
     cover:"./img/umkm-1.png",
-    gallery:[
-      "./img/umkm-1.png",
-      "./img/umkm-2.png",
-      "./img/umkm-3.png"
-    ]
+    gallery:["./img/umkm-1.png","./img/umkm-2.png","./img/umkm-3.png"]
   },
 
   "RodaGo":{
     cover:"./img/rodago-1.png",
-    gallery:[
-      "./img/rodago-1.png",
-      "./img/rodago-2.png",
-      "./img/rodago-3.png"
-    ]
+    gallery:["./img/rodago-1.png","./img/rodago-2.png","./img/rodago-3.png"]
   },
 
   "The Moments":{
     cover:"./img/moments-1.png",
-    gallery:[
-      "./img/moments-1.png",
-      "./img/moments-2.png",
-      "./img/moments-3.png"
-    ]
+    gallery:["./img/moments-1.png","./img/moments-2.png","./img/moments-3.png"]
   }
 
 };
@@ -2361,9 +1721,7 @@ $('#pj').innerHTML = P.map((p,i) => `
     data-i="${i}"
   >
 
-    <span class="ar">
-      ↗
-    </span>
+    <span class="ar">↗</span>
 
     <div class="vis">
       ${p.v}
@@ -2371,26 +1729,14 @@ $('#pj').innerHTML = P.map((p,i) => `
 
     <div class="info">
 
-      <span class="t">
-        ${p.t}
-      </span>
+      <span class="t">${p.t}</span>
 
-      <h3>
-        ${p.n}
-      </h3>
+      <h3>${p.n}</h3>
 
-      <p class="ds">
-        ${p.d}
-      </p>
+      <p class="ds">${p.d}</p>
 
       <div class="tags">
-
-        ${p.tags.map(t => `
-          <span class="chip">
-            ${t}
-          </span>
-        `).join('')}
-
+        ${p.tags.map(t => `<span class="chip">${t}</span>`).join('')}
       </div>
 
     </div>
@@ -2448,13 +1794,9 @@ function openProject(i){
         ✕
       </button>
 
-      <span class="chip">
-        ${p.t}
-      </span>
+      <span class="chip">${p.t}</span>
 
-      <h3 style="margin-top:8px">
-        ${p.n}
-      </h3>
+      <h3 style="margin-top:8px">${p.n}</h3>
 
     </div>
 
@@ -2487,77 +1829,40 @@ function openProject(i){
 
 
       <div>
-
-        <h4>
-          Overview
-        </h4>
-
-        <p>
-          ${p.ov}
-        </p>
-
+        <h4>Overview</h4>
+        <p>${p.ov}</p>
       </div>
 
 
       <div>
-
-        <h4>
-          Problem
-        </h4>
-
-        <p>
-          ${p.pr}
-        </p>
-
+        <h4>Problem</h4>
+        <p>${p.pr}</p>
       </div>
 
 
       <div>
-
-        <h4>
-          Solution
-        </h4>
-
-        <p>
-          ${p.so}
-        </p>
-
+        <h4>Solution</h4>
+        <p>${p.so}</p>
       </div>
 
 
       <div>
-
-        <h4>
-          Key Features
-        </h4>
-
+        <h4>Key Features</h4>
         <ul>
-          ${p.kf.map(k => `
-            <li>${k}</li>
-          `).join('')}
+          ${p.kf.map(k => `<li>${k}</li>`).join('')}
         </ul>
+      </div>
 
+
+      <div>
+        <h4>My Role</h4>
+        <p>${p.r}</p>
       </div>
 
 
       <div>
 
-        <h4>
-          My Role
-        </h4>
-
-        <p>
-          ${p.r}
-        </p>
-
-      </div>
-
-
-      <div>
-
-        <h4>
-          Tech Stack
-        </h4>
+        <h4>Tech Stack</h4>
 
         ${p.ts.map(t => `
           <span
@@ -2573,9 +1878,7 @@ function openProject(i){
 
       <div>
 
-        <h4>
-          Project Gallery
-        </h4>
+        <h4>Project Gallery</h4>
 
         <div class="gal" style="--pc:${p.pc}">
           ${gallery}
@@ -2656,6 +1959,25 @@ addEventListener('keydown',e => {
 ========================================================= */
 
 const X = [
+
+  /* ---------------------------------------------------------
+     KARTU MAGANG (hapus tanda komentar & isi kalau sudah siap)
+
+  {
+    year:"2026",
+    title:"Nama Perusahaan",
+    role:"Posisi Magang",
+    organization:"Internship",
+
+    bullets:[
+      "Tugas / tanggung jawab 1",
+      "Tugas / tanggung jawab 2",
+      "Tugas / tanggung jawab 3"
+    ],
+
+    tags:["Tool 1","Tool 2","Skill 1"]
+  },
+  --------------------------------------------------------- */
 
   {
     year:"2025",
@@ -2753,12 +2075,7 @@ const X = [
       "Supported the learning process during laboratory activities."
     ],
 
-    tags:[
-      "Communication",
-      "Teaching",
-      "Problem Solving",
-      "Technical Support"
-    ]
+    tags:["Communication","Teaching","Problem Solving","Technical Support"]
   }
 
 ];
@@ -2771,43 +2088,25 @@ $('#tl').innerHTML = X.map((x,i) => `
     style="--d:${i*.08}s"
   >
 
-    <div class="yr">
-
-      ${x.year}
-
-    </div>
-
+    <div class="yr">${x.year}</div>
 
     <div class="ec">
 
-      <h3>
-        ${x.title}
-      </h3>
+      <h3>${x.title}</h3>
 
       <div class="rl">
         ${x.role} · ${x.organization}
       </div>
 
       <ul>
-
-        ${x.bullets.map(b => `
-          <li>${b}</li>
-        `).join('')}
-
+        ${x.bullets.map(b => `<li>${b}</li>`).join('')}
       </ul>
-
 
       ${
         x.tags
         ? `
           <div class="tags">
-
-            ${x.tags.map(t => `
-              <span class="chip">
-                ${t}
-              </span>
-            `).join('')}
-
+            ${x.tags.map(t => `<span class="chip">${t}</span>`).join('')}
           </div>
         `
         : ''
@@ -2826,37 +2125,10 @@ $('#tl').innerHTML = X.map((x,i) => `
 
 const N = [
 
-  [
-    "💻",
-    "Building",
-    "Exploring more web development",
-    "#e3e0ff",
-    -2
-  ],
-
-  [
-    "🎨",
-    "Designing",
-    "Improving my UI/UX skills",
-    "#fff3b8",
-    1.5
-  ],
-
-  [
-    "📚",
-    "Learning",
-    "Growing through new experiences",
-    "#d5f5e3",
-    -1
-  ],
-
-  [
-    "🔎",
-    "Looking for",
-    "An internship opportunity",
-    "#ffe0e6",
-    2.5
-  ]
+  ["💻","Building","Exploring more web development","#e3e0ff",-2],
+  ["🎨","Designing","Improving my UI/UX skills","#fff3b8",1.5],
+  ["📚","Learning","Growing through new experiences","#d5f5e3",-1],
+  ["🔎","Looking for","An internship opportunity","#ffe0e6",2.5]
 
 ];
 
@@ -2872,17 +2144,11 @@ $('#nw').innerHTML = N.map((n,i) => `
     "
   >
 
-    <span class="e">
-      ${n[0]}
-    </span>
+    <span class="e">${n[0]}</span>
 
-    <small>
-      ${n[1]}
-    </small>
+    <small>${n[1]}</small>
 
-    <b>
-      ${n[2]}
-    </b>
+    <b>${n[2]}</b>
 
   </div>
 
@@ -2910,13 +2176,7 @@ if(C.length){
 
   $('#certificates').hidden = false;
 
-  const cats = [
-    "All",
-    "Technology",
-    "Design",
-    "Workshop",
-    "Other"
-  ];
+  const cats = ["All","Technology","Design","Workshop","Other"];
 
 
   const draw = filter => {
@@ -2939,17 +2199,11 @@ if(C.length){
 
         <div class="cert">
 
-          <span class="chip">
-            ${c.c}
-          </span>
+          <span class="chip">${c.c}</span>
 
-          <h3>
-            ${c.t}
-          </h3>
+          <h3>${c.t}</h3>
 
-          <p>
-            ${c.o} · ${c.y}
-          </p>
+          <p>${c.o} · ${c.y}</p>
 
         </div>
 
